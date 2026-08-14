@@ -28,8 +28,5 @@ public class Fatorial {
         }
         
         System.out.println("Resultado: " + resultado);
-                
-        
-        
     }
 }
