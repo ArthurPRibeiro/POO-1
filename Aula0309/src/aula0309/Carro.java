@@ -9,18 +9,22 @@ package aula0309;
  * @author ifsp
  */
 public class Carro {
-    public String marca;
-    public String modelo;
-    public int odometro;
+    private String marca;
+    private String modelo;
+    private int odometro;
     
     public Carro(String marca, String modelo){
         this.marca = marca;
         this.modelo = modelo;
-        odometro = 0;
+        this.odometro = 0;
     }
     
     public void andar( int distancia){
-        this.odometro += distancia;
+        if (distancia <=0 ){
+            System.out.println("Valor invalido!");
+        }
+        odometro += distancia;
+        System.out.println("O carro " + marca + "/" + modelo + " andou " + distancia + " Km");
     }
     
     public void visualizarOdometro(){

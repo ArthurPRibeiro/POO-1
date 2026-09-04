@@ -28,13 +28,13 @@ public class Aula0309 {
         
         pessoa1.imprimirNome();
         
-        Carro carro1 = new Carro("Volwks", "Polo");
+        Carro carro1 = new Carro("Volkswagen", "Polo");
         
         carro1.visualizarOdometro();
         carro1.andar(50);
         carro1.andar(50);
         carro1.visualizarOdometro();
-        carro1.andar(25);
+        carro1.andar(-5);
         carro1.visualizarOdometro();
 
     }
